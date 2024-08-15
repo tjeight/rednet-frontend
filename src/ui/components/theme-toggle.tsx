@@ -9,16 +9,16 @@ export function ThemeToggle() {
     <div className={"my-4 flex flex-row gap-4 text-black dark:text-zinc-400"}>
       <MoonIcon
         onClick={() => setTheme("dark")}
-        width={17}
-        height={17}
-        className={"cursor-pointer rounded-full"}
+        width={14}
+        height={14}
+        className={"cursor-pointer dark:hover:text-white"}
       />
 
       <SunIcon
         onClick={() => setTheme("light")}
-        width={17}
-        height={17}
-        className={"cursor-pointer rounded-full"}
+        width={14}
+        height={14}
+        className={"cursor-pointer dark:hover:text-white"}
       />
     </div>
   );

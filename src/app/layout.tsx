@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fonts.GeistSans.variable} ${fonts.GeistMono.variable} font-geistMono`}
+      className={`${fonts.GeistSans.variable} ${fonts.GeistMono.variable} font-geistSans`}
       suppressHydrationWarning
     >
       <body>

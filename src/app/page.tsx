@@ -10,8 +10,8 @@ export default function Home() {
         Next Essential
       </Label>
       <p className={"my-4 max-w-[44rem] text-center"}>
-        Next.js Essential - An Essential Template to build an modern next.js
-        application with all the essentials included.
+        An Essential Template to build an modern Next.js application with all
+        the essentials included.
       </p>
       <ThemeToggle />
     </main>
