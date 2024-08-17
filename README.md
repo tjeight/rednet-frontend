@@ -37,7 +37,7 @@ git bash
 ```
 
 ```bash
-rm -rf .git pnpm-lock.yaml
+rm -rf .git bun.lockb
 ```
 
 and then install the dependencies by using the package manager of your choice.
@@ -49,6 +49,10 @@ pnpm/yarn/bun/npm install
 ```bash
 pnpm/yarn/bun/npm run dev
 ```
+
+### Other Changes
+
+If you're using other package manager than `bun` you have to update the scripts in `package.json` file, workflow in `.github/workflows/build.yml` file and husky configuration in `.husky/pre-commit` file.
 
 ## Features
 
