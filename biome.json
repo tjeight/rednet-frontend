@@ -17,7 +17,8 @@
       ".husky",
       "node_modules",
       "build",
-      "dist"
+      "dist",
+      "public"
     ]
   },
   "organizeImports": {
@@ -58,7 +59,8 @@
       ".husky",
       "node_modules",
       "build",
-      "dist"
+      "dist",
+      "public"
     ]
   },
   "javascript": {
