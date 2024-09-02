@@ -5,20 +5,24 @@ import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();
-  return (
-    <div className={"my-4 flex flex-row gap-4 text-black dark:text-zinc-400"}>
-      <MoonIcon
-        onClick={() => setTheme("dark")}
-        width={14}
-        height={14}
-        className={"cursor-pointer dark:hover:text-white"}
-      />
 
+  return (
+    <div className={"inline-flex flex-row gap-2 rounded-2xl bg-secondary p-1"}>
       <SunIcon
+        className={
+          "cursor-pointer rounded-full p-1 text-secondary-foreground hover:bg-primary/20"
+        }
         onClick={() => setTheme("light")}
-        width={14}
-        height={14}
-        className={"cursor-pointer dark:hover:text-white"}
+        width={24}
+        height={24}
+      />
+      <MoonIcon
+        className={
+          "cursor-pointer rounded-full p-1 text-secondary-foreground hover:bg-primary/20"
+        }
+        onClick={() => setTheme("dark")}
+        width={24}
+        height={24}
       />
     </div>
   );

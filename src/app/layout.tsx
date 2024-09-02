@@ -1,30 +1,31 @@
 import type { Metadata } from "next";
 import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
-import { ThemeProvider } from "@/lib/providers/theme-provider";
+import { ThemeProvider } from "@/lib/providers/theme";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Next Essential",
+  title: "Next Essential | Elementary Unified Starter",
   description:
-    "Next Essential - An Essential Template to build an Modern Next.js application with all the essentials included.",
+    "Unified Starter - Next Essential, An Essential Template to start an modern next.js application with all the essentials configured.",
   icons: {
     icon: "favicon.png",
   },
   openGraph: {
-    title: "Next Essential",
+    title: "Next Essential | Elementary Unified Starter",
     description:
-      "Next Essential - An Essential Template to build an Modern Next.js application with all the essentials included.",
-    url: "https://radium.vgseven.com",
-    siteName: "Next Essential",
+      "Unified Starter - Next Essential, An Essential Template to start an modern next.js application with all the essentials configured.",
+    url: "https://elementary.vgseven.com",
+    siteName: "Next Essential | Elementary Unified Starter",
     images: [
       {
-        url: "https://dlaiwpar81okkqcb.public.blob.vercel-storage.com/vgseven/vgseven-banner.png",
+        url: "/elementary-banner.png",
         width: 800,
         height: 600,
         alt: "Next Essential",
       },
       {
-        url: "https://dlaiwpar81okkqcb.public.blob.vercel-storage.com/vgseven/vgseven-banner.png",
+        url: "/elementary-banner.png",
         width: 1800,
         height: 1600,
         alt: "Next Essential",
@@ -35,14 +36,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next Essential",
+    title: "Next Essential | Elementary Unified Starter",
     description:
-      "Next Essential - An Essential Template to build an Modern Next.js application with all the essentials included.",
-    images: [
-      "https://dlaiwpar81okkqcb.public.blob.vercel-storage.com/vgseven/vgseven-banner.png",
-    ],
+      "Unified Starter - Next Essential, An Essential Template to start an modern next.js application with all the essentials configured.",
+    images: ["/elementary-banner.png"],
   },
-  metadataBase: new URL("https://vgseven.com"),
+  metadataBase: new URL("https://elementary.vgseven.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -59,7 +58,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fonts.GeistSans.variable} ${fonts.GeistMono.variable} font-geistSans`}
+      className={cn(
+        fonts.GeistSans.variable,
+        fonts.GeistMono.variable,
+        "font-geistMono"
+      )}
       suppressHydrationWarning
     >
       <body>

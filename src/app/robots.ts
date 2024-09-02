@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://radium.vgseven.com/sitemap.xml",
+    sitemap: "https://elementary.vgseven.com/sitemap.xml",
   };
 }

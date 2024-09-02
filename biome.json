@@ -9,16 +9,15 @@
     "lineEnding": "lf",
     "attributePosition": "auto",
     "ignore": [
-      ".vscode",
       ".next",
       ".vercel",
       ".env",
       ".changeset",
       ".husky",
+      ".turbo",
       "node_modules",
       "build",
-      "dist",
-      "public"
+      "dist"
     ]
   },
   "organizeImports": {
@@ -28,8 +27,20 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "nursery": {
+        "useSortedClasses": {
+          "fix": "unsafe",
+          "level": "warn",
+          "options": {
+            "attributes": ["className"],
+            "functions": ["cn", "cva"]
+          }
+        }
+      },
       "correctness": {
-        "noUnusedVariables": "warn"
+        "recommended": true,
+        "noUnusedVariables": "warn",
+        "noUnusedImports": "warn"
       },
       "style": {
         "recommended": true
@@ -57,10 +68,10 @@
       ".env",
       ".changeset",
       ".husky",
+      ".turbo",
       "node_modules",
       "build",
-      "dist",
-      "public"
+      "dist"
     ]
   },
   "javascript": {
