@@ -1,29 +1,26 @@
 "use client";
 
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
+import { Moon, Sun } from "lucide-react";
+import { Button } from "@/ui/primitives/button";
 
-export function ThemeToggle() {
-  const { setTheme } = useTheme();
+const ThemeToggle = () => {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   return (
-    <div className={"inline-flex flex-row gap-2 rounded-2xl bg-secondary p-1"}>
-      <SunIcon
-        className={
-          "cursor-pointer rounded-full p-1 text-secondary-foreground hover:bg-primary/20"
-        }
-        onClick={() => setTheme("light")}
-        width={24}
-        height={24}
-      />
-      <MoonIcon
-        className={
-          "cursor-pointer rounded-full p-1 text-secondary-foreground hover:bg-primary/20"
-        }
-        onClick={() => setTheme("dark")}
-        width={24}
-        height={24}
-      />
-    </div>
+    <Button
+      onClick={toggleTheme}
+      className="h-9 w-9 rounded-full border border-foreground/40"
+    >
+      <Sun className="dark:-rotate-90 h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:scale-0" />
+      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
   );
-}
+};
+
+export { ThemeToggle };

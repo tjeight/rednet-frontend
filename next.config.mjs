@@ -12,7 +12,7 @@ export default {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "dlaiwpar81okkqcb.public.blob.vercel-storage.com",
+        hostname: "odouepjkxheu5esn.public.blob.vercel-storage.com",
         port: "",
         pathname: "/vgseven/**",
       },

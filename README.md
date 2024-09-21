@@ -1,6 +1,6 @@
-# Unified Starter - Next Essential
+# Unified Next Essential
 
-Unified Starter - Next Essential is a modern, feature-rich template for building Next.js applications with all the essential configurations and tools pre-configured.
+Unified Next Essential - An Essential Template to get started with Next.js application with all the essentials included...
 
 ## Features
 
@@ -9,8 +9,7 @@ Unified Starter - Next Essential is a modern, feature-rich template for building
 - 💻 Language: [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
 - 🧹 Linting and Formatting: [Biome.js](https://biomejs.dev/) - Fast and customizable linter and formatter
 - 🎨 Themes: [Next Themes](https://github.com/pacocoursey/next-themes) - Easy theme management for Next.js
-- 💄 Icons: [Radix-Icons](https://www.radix-ui.com/icons) - A crisp set of 15×15 icons
-- 🎨 UI: [Shadcn UI](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
+- 💄 Icons: [Lucide-React](https://lucide.dev/) - Beautiful open-source icons
 - ⚙️ Build: Github Actions - Automated workflows for CI/CD
 - 🛠 Commit: [Husky](https://typicode.github.io/husky/) - Git hooks made easy
 - 📦 Package: [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
@@ -22,8 +21,6 @@ Unified Starter - Next Essential is a modern, feature-rich template for building
 - `lib/`: Includes helpers, utilities, and configuration files
 - `public/`: Static assets and images
 - `styles/`: Global styles and theme configuration and independent styles for layout.
-
-> This are available folder structure for this starter. You can customize it as per your requirements.
 
 ## Getting Started
 
