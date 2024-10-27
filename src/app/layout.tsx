@@ -5,18 +5,18 @@ import { ThemeProvider } from "@/lib/providers/theme";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Unified Next Essential | Elementary",
+  title: "Next Essential | Elementary",
   description:
-    "Unified Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
+    "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
   icons: {
     icon: "favicon.png",
   },
   openGraph: {
-    title: "Unified Next Essential | Elementary",
+    title: "Next Essential | Elementary",
     description:
-      "Unified Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
+      "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
     url: "https://elementary.vgseven.com",
-    siteName: "Unified Next Essential | Elementary",
+    siteName: "Next Essential | Elementary",
     images: [
       {
         url: "https://odouepjkxheu5esn.public.blob.vercel-storage.com/vgseven/vgseven-banner.png",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Unified Next Essential | Elementary",
+    title: "Next Essential | Elementary",
     description:
-      "Unified Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
+      "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
     images: [
       "https://odouepjkxheu5esn.public.blob.vercel-storage.com/vgseven/vgseven-banner.png",
     ],
@@ -63,7 +63,7 @@ export default function RootLayout({
       className={cn(
         fonts.GeistSans.variable,
         fonts.GeistMono.variable,
-        "font-geistSans"
+        "font-geistMono"
       )}
       suppressHydrationWarning
     >

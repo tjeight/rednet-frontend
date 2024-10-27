@@ -1,6 +1,6 @@
-# Unified Next Essential
+# Next Essential
 
-Unified Next Essential - An Essential Template to get started with Next.js application with all the essentials included...
+Next Essential - An Essential Template to get started with Next.js application with all the essentials included...
 
 ## Features
 
