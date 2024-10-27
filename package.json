@@ -10,6 +10,7 @@
     "lint:fix": "biome lint --write --unsafe .",
     "typecheck": "tsc --noEmit",
     "format": "biome format --write .",
+    "check": "biome check --write .",
     "prepare": "husky",
     "build:prepare": "pnpm run typecheck && pnpm run lint && pnpm run format && pnpm run build"
   },

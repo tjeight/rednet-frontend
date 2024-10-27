@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
 import { cn } from "@/lib/utils";
+import { Slot } from "@radix-ui/react-slot";
+import * as React from "react";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
