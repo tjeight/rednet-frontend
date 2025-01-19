@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
-import { ThemeProvider } from "@/lib/providers/theme";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/providers/theme";
 
 export const metadata: Metadata = {
   title: "Next Essential | Elementary",
@@ -60,12 +60,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={cn(
         fonts.GeistSans.variable,
         fonts.GeistMono.variable,
-        "font-geistMono"
+        "font-geistSans"
       )}
-      suppressHydrationWarning
     >
       <body>
         <ThemeProvider
