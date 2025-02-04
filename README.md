@@ -32,8 +32,7 @@ The folder structure of the project is organized as follows:
     /styles                   # Global styles, TailwindCSS theme configuration
     /tests                    # Unit and integration tests
     /config                   # Project configuration files (e.g., Next.js config, environment settings)
-    next.config.js             # Next.js settings
-    tailwind.config.js         # Tailwind CSS configuration
+    next.config.ts             # Next.js settings
     .gitignore                 # Specifies files to ignore in Git
     README.md                  # Project documentation
     LICENSE                    # License information
@@ -72,9 +71,8 @@ To get started with the Next Essential project, follow these steps:
 
 ## Customization
 
-- Modify the theme in `tailwind.config.js`
-- Adjust global styles in `app/globals.css`
-- Configure Next.js settings in `next.config.js`
+- Modify the theme in `styles/root-layout.css`
+- Configure Next.js settings in `next.config.ts`
 
 ## Contributing
 
