@@ -1,4 +1,4 @@
-# Next Essential
+    # Next Essential
 
 Next Essential - An Essential Template to get started with Next.js application with all the essentials included...
 
